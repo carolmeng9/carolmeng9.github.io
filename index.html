@@ -1,71 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Authorization Test</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            max-width: 800px;
-        }
-        textarea {
-            width: 100%;
-            height: 150px;
-            font-family: monospace;
-        }
-        button {
-            padding: 10px 20px;
-            margin-top: 10px;
-            cursor: pointer;
-        }
-        #response {
-            background: #f4f4f4;
-            padding: 10px;
-            margin-top: 20px;
-            white-space: pre-wrap;
-            font-family: monospace;
-        }
-        .error {
-            color: red;
-        }
-    </style>
+    <title>My Personal Website</title>
 </head>
+
 <body>
-    <h1>Test Authorization Endpoint</h1>
-    <p>Paste an encrypted JSON payload ({"data": "base64_encrypted"}) below and submit to test the /authorize endpoint:</p>
-    <textarea id="payload" placeholder='{"data": "base64_encrypted_payload"}'></textarea>
-    <br>
-    <button onclick="sendRequest()">Send Request</button>
-    <div id="response"></div>
+    <header>
+        <h1>Hi</h1>
+    </header>
 
-    <script>
-        async function sendRequest() {
-            const payloadText = document.getElementById('payload').value;
-            const responseDiv = document.getElementById('response');
-            responseDiv.innerHTML = 'Sending request...';
+    <main>
+        <p>I'm hosted with GitHub Pages eeeeee.</p>
+    </main>
 
-            try {
-                const payload = JSON.parse(payloadText);
-                const response = await fetch('/authorize', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(payload)
-                });
+    <button onclick="window.location.href='https://github.com/carolmeng9';">my guthib</button>
 
-                const result = await response.json();
-                if (response.ok) {
-                    responseDiv.innerHTML = `<strong>Response (Status ${response.status}):</strong>\n${JSON.stringify(result, null, 2)}`;
-                } else {
-                    responseDiv.innerHTML = `<strong class="error">Error (Status ${response.status}):</strong>\n${JSON.stringify(result, null, 2)}`;
-                }
-            } catch (error) {
-                responseDiv.innerHTML = `<strong class="error">Error:</strong> ${error.message}`;
-            }
-        }
-    </script>
+    <footer>
+        <p>© 2024 My Website</p>
+    </footer>
 </body>
 </html>
