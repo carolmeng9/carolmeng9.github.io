@@ -2,15 +2,6 @@
 
 React site built with [Vite](https://vitejs.dev/), deployed to GitHub Pages.
 
-## Development
-
-```bash
-npm install
-npm run dev
-```
-
-Open [http://localhost:5173](http://localhost:5173).
-
 ## Deploy
 
 Push to `main` — GitHub Actions builds and deploys automatically.
@@ -51,10 +42,10 @@ date: 2026-03-01
 excerpt: Optional short summary for the blog index.
 ---
 
-Your post content in **Markdown** goes here.
+Post content in **Markdown** here
 ```
 
-The post appears on `/blog` automatically after you build and deploy.
+The post appears on `/blog` automatically after build and deploy.
 
 ### Site info & links
 
