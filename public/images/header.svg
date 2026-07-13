@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="180" viewBox="0 0 1200 180">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e2d8ec"/>
+      <stop offset="100%" style="stop-color:#c5e2e2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="180" fill="url(#bg)"/>
+  <text x="600" y="100" font-family="Georgia, serif" font-size="24" fill="#4a5568" text-anchor="middle">Replace with your header graphic (1200×180 or similar)</text>
+</svg>
