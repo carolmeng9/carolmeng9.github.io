@@ -1,0 +1,21 @@
+export const education = {
+  school: 'University of Toronto',
+  campus: 'St. George Campus',
+  location: 'Toronto, ON',
+  degree: 'Honours Bachelor of Science in Computer Science',
+  specialization: 'Specialist in Computer Science',
+  focuses: ['Artificial Intelligence', 'Computer Vision'],
+  period: '2021 – 2026',
+  gpa: '3.5',
+  relevantCourses: [
+    'Machine Learning',
+    'Deep Learning',
+    'Computer Vision',
+    'Natural Language Processing',
+    'Reinforcement Learning',
+    'Video Game Design (CSC404)',
+    'Human-Computer Interaction',
+    'Software Engineering',
+    'Algorithms and Data Structures',
+  ],
+};

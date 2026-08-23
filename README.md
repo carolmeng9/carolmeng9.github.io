@@ -16,6 +16,23 @@ npm run deploy
 
 ## Adding content
 
+### New experience entry
+
+Edit `src/data/experiences.js` and add an object to the array:
+
+```js
+{
+  id: 'unique-id',
+  role: 'Your Role',
+  organization: 'Organization Name',
+  date: 'Month Year – Month Year',
+  bullets: [
+    'Description of what you did',
+    'Another responsibility or achievement',
+  ],
+},
+```
+
 ### New project
 
 Edit `src/data/projects.js` and add an object:
@@ -27,7 +44,7 @@ Edit `src/data/projects.js` and add an object:
   description: 'Short description (under ~30 words).',
   date: 'Jan 2025 – Apr 2025',
   image: '/images/my-project.jpg',  // put image in public/images/
-  href: 'https://github.com/...',   // optional link
+  href: 'https://github.com/...',   // optional link (use null if none)
 },
 ```
 
@@ -47,9 +64,11 @@ Post content in **Markdown** here
 
 The post appears on `/blog` automatically after build and deploy.
 
-### Site info & links
+### Update education, skills, or site info
 
-Edit `src/data/site.js` for name, bio, social links, and image paths.
+- **Education**: Edit `src/data/education.js`
+- **Skills**: Edit `src/data/skills.js`
+- **Site info & links**: Edit `src/data/site.js` for name, bio, social links, and image paths
 
 ### Images
 
@@ -59,9 +78,9 @@ Place assets in `public/images/` (e.g. `public/images/photo.jpg` → use `/image
 
 ```
 src/
-  components/     Reusable UI (Header, Hero, ProjectCard, …)
+  components/     Reusable UI (Header, Hero, ProjectCard, ExperienceList, Education, Skills, …)
   content/posts/  Blog posts as Markdown
-  data/           site.js, projects.js, posts loader
+  data/           site.js, projects.js, experiences.js, education.js, skills.js, posts loader
   pages/          Home, Blog, BlogPost
 public/images/    Static assets
 ```
